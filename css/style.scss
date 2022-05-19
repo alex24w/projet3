@@ -1,0 +1,227 @@
+html, body{
+    font-family: 'Roboto', sans-serif;    
+}
+footer h3{
+    font-family: 'Shrikhand', sans-serif;
+}
+$police-titre: 40px;
+$police-titre-weight: 500;
+
+@media screen and (max-width: 768px ) {
+
+    .entete{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        &__logo{
+            margin: 30px 0px 30px 0px;
+        }
+        &__logo img{
+            height: 50px;
+            width: auto;
+            display: flex;
+            margin: auto;
+        }
+
+        &__location{
+            display: flex;
+            align-items: baseline;
+            justify-content: center;
+            background-color: #eaeaea;
+        }
+        &__location i{
+            font-size: 25px;
+            margin-right: 5px;
+        }
+        &__location h2{
+            margin-left: 5px;
+            font-size: 25px;
+            font-weight: 400;
+        } 
+    }
+    .explication{
+        &__titre{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            justify-content: center;
+            background-color: #f6f6f7;
+        }
+        &__titre h1{
+            text-align: center;
+            font-size: $police-titre;
+            margin: 50px 10% 5px 10%;
+            font-weight: $police-titre-weight;
+        }
+        &__titre h2{
+            text-align: center;
+            font-size: 27px;
+            font-weight: 100;
+            margin: 20px 5% 50px 5%;
+        }
+        &__titre button{
+            height: 70px;
+            width: 60%;
+            margin: auto;
+            border: none;
+            border-radius: 35px;
+            background:linear-gradient(120deg,#FF79DA,#9356DC);
+            margin-bottom: 70px;
+        }
+        &__titre span{
+            color: white;
+            font-size: 25px;
+        }
+    }
+    .fonction{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 60px;
+        &__titre h2{
+            font-size: $police-titre;
+            font-weight: $police-titre-weight;
+            margin-left: 5%;
+            margin-top: 60px;
+        }
+        &__choix a{
+            text-decoration: none;
+            color: inherit;
+        }
+        &__choix a:hover .icone{
+            color: #9356DC;
+        }
+        &__choix {
+            &--restau{
+                display: flex;
+                align-items: center;
+                margin: 30px 5% 30px 5%;
+                background-color:#f6f6f7;
+                border: 1px #f6f6f7 solid;
+                height: 100px;
+                border-radius: 30px;
+                box-shadow: 6px 6px 6px #eaeaea;
+            }
+             &--restau h3{
+                height: 35px;
+                width: 35px;
+                border-radius: 17.5px;
+                color: white;
+                background-color: #9356DC;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-left: -17.5px;
+                font-size: 23px;
+            }
+            &--restau .icone{
+               font-size: 25px;
+               width: 28px;
+               color: grey;
+               margin:0px 30px 0px 30px;
+               white-space: nowrap;
+
+            }
+            &--restau h2{
+                font-size: 25px;
+                font-weight: 400;
+
+            }
+        }
+    }
+    .restaurants{
+        display: flex;
+        flex-direction: column;
+        background-color: #f6f6f7;
+        &__titre h2{
+            font-size: $police-titre;
+            font-weight: $police-titre-weight;
+            margin-left: 5%;
+            margin-top: 60px;
+        }
+        &__cartes a{
+            text-decoration: none;
+            color: inherit;
+        }
+        &__cartes{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            justify-content: center;
+            margin-bottom: 50px;
+            &--menu{
+                width: auto;
+                height: auto;
+                margin: 0% 5% 7% 5%; 
+                background-color: white;  
+                border-radius: 25px;
+            }
+            &--menu img{
+                width: 100%;
+                height: 300px;
+                object-fit: cover;
+                border-radius: 25px 25px 0px 0px;
+            }
+            &--menu .menu{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            &--menu .menu .nom-menu h2{
+                font-size: 30px;
+                margin: 15px 0px 5px 20px;
+            }
+            &--menu .menu .nom-menu h3{
+                font-size: 30px;
+                font-weight: 200;
+                margin: 5px 0px 15px 20px;
+            }
+            &--menu .menu i{
+                font-size: 35px;
+                margin-right: 35px;           
+            }
+        }
+        &__cartes .new{
+            border-radius: 3px;
+            background-color: #99E2D0;
+            color: #008766;
+            padding: 0 12px;
+            font-size: 25px;
+            font-weight: bold;
+            position: absolute;
+            right: 15px;
+            top: 15px;
+        }
+    }
+    .pied-de-page{
+        display: flex;
+        flex-direction: column;
+        background-color: #353535;
+        &__titre{
+            color: white;
+            font-size: 22px;
+            font-weight: 100;
+            margin-left: 5%
+        }
+        &__menu{
+            color: white;
+            margin: 0% 0% 10% 5%;
+        }
+        &__menu .interaction{
+            display: flex;
+            align-items: baseline;
+            padding: 0px;
+        }
+        &__menu h2{
+            font-size: 25px;
+            font-weight: 300;
+            padding: 0px;
+            margin-bottom: 0px;
+        }
+        &__menu i{
+            font-size: 23px;
+            width: 25px;
+            margin-right: 20px;
+            padding: 0px;
+        }
+    }
+}
