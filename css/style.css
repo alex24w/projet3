@@ -39,6 +39,7 @@ footer h3 {
         -ms-flex-pack: center;
             justify-content: center;
     background-color: #eaeaea;
+    border-top: 3px solid #d3d3d3;
   }
   .entete__location i {
     font-size: 25px;
@@ -83,10 +84,11 @@ footer h3 {
     border-radius: 35px;
     background: linear-gradient(120deg, #FF79DA, #9356DC);
     margin-bottom: 70px;
-  }
-  .explication__titre span {
     color: white;
     font-size: 25px;
+  }
+  button:hover {
+    background-color: #008766;
   }
   .fonction {
     display: -webkit-box;
@@ -111,6 +113,9 @@ footer h3 {
   .fonction__choix a:hover .icone {
     color: #9356DC;
   }
+  .fonction__choix a:hover .fonction__choix--restau {
+    background-color: #F5EDFF;
+  }
   .fonction__choix--restau {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -123,8 +128,8 @@ footer h3 {
     border: 1px #f6f6f7 solid;
     height: 100px;
     border-radius: 30px;
-    -webkit-box-shadow: 6px 6px 6px #eaeaea;
-            box-shadow: 6px 6px 6px #eaeaea;
+    -webkit-box-shadow: 6px 6px 6px #646262;
+            box-shadow: 6px 6px 6px #646262;
   }
   .fonction__choix--restau h3 {
     height: 35px;
@@ -195,6 +200,8 @@ footer h3 {
     margin: 0% 5% 7% 5%;
     background-color: white;
     border-radius: 25px;
+    -webkit-box-shadow: 6px 6px 6px #646262;
+            box-shadow: 6px 6px 6px #646262;
   }
   .restaurants__cartes--menu img {
     width: 100%;
@@ -278,6 +285,10 @@ footer h3 {
     width: 25px;
     margin-right: 20px;
     padding: 0px;
+  }
+  .pied-de-page__menu a {
+    text-decoration: none;
+    color: inherit;
   }
 }
 /*# sourceMappingURL=style.css.map */

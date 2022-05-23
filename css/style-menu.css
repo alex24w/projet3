@@ -10,6 +10,24 @@ h1 {
   font-family: 'Shrikhand', sans-serif;
 }
 
+@-webkit-keyframes animation-choix {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes animation-choix {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .entete {
     display: -webkit-box;
@@ -206,6 +224,62 @@ h1 {
     width: 25px;
     margin-right: 20px;
     padding: 0px;
+  }
+  .pied-de-page__menu a {
+    text-decoration: none;
+    color: inherit;
+  }
+  .choix--1 {
+    -webkit-animation: animation-choix 600ms 200ms ease-in-out both;
+            animation: animation-choix 600ms 200ms ease-in-out both;
+  }
+  .choix--2 {
+    -webkit-animation: animation-choix 600ms 400ms ease-in-out both;
+            animation: animation-choix 600ms 400ms ease-in-out both;
+  }
+  .choix--3 {
+    -webkit-animation: animation-choix 600ms 600ms ease-in-out both;
+            animation: animation-choix 600ms 600ms ease-in-out both;
+  }
+  .choix--4 {
+    -webkit-animation: animation-choix 600ms 800ms ease-in-out both;
+            animation: animation-choix 600ms 800ms ease-in-out both;
+  }
+  .choix--5 {
+    -webkit-animation: animation-choix 600ms 1000ms ease-in-out both;
+            animation: animation-choix 600ms 1000ms ease-in-out both;
+  }
+  .choix--6 {
+    -webkit-animation: animation-choix 600ms 1200ms ease-in-out both;
+            animation: animation-choix 600ms 1200ms ease-in-out both;
+  }
+  .choix--7 {
+    -webkit-animation: animation-choix 600ms 1400ms ease-in-out both;
+            animation: animation-choix 600ms 1400ms ease-in-out both;
+  }
+  .choix--8 {
+    -webkit-animation: animation-choix 600ms 1600ms ease-in-out both;
+            animation: animation-choix 600ms 1600ms ease-in-out both;
+  }
+  .choix--9 {
+    -webkit-animation: animation-choix 600ms 1800ms ease-in-out both;
+            animation: animation-choix 600ms 1800ms ease-in-out both;
+  }
+  .choix--10 {
+    -webkit-animation: animation-choix 600ms 2000ms ease-in-out both;
+            animation: animation-choix 600ms 2000ms ease-in-out both;
+  }
+  .choix--11 {
+    -webkit-animation: animation-choix 600ms 2200ms ease-in-out both;
+            animation: animation-choix 600ms 2200ms ease-in-out both;
+  }
+  .choix--12 {
+    -webkit-animation: animation-choix 600ms 2400ms ease-in-out both;
+            animation: animation-choix 600ms 2400ms ease-in-out both;
+  }
+  .choix--13 {
+    -webkit-animation: animation-choix 600ms 2600ms ease-in-out both;
+            animation: animation-choix 600ms 2600ms ease-in-out both;
   }
 }
 /*# sourceMappingURL=style-menu.css.map */

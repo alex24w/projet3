@@ -28,6 +28,7 @@ $police-titre-weight: 500;
             align-items: baseline;
             justify-content: center;
             background-color: #eaeaea;
+            border-top: 3px solid #d3d3d3;
         }
         &__location i{
             font-size: 25px;
@@ -67,11 +68,12 @@ $police-titre-weight: 500;
             border-radius: 35px;
             background:linear-gradient(120deg,#FF79DA,#9356DC);
             margin-bottom: 70px;
-        }
-        &__titre span{
             color: white;
             font-size: 25px;
         }
+    }
+    button:hover{
+        background-color: #008766;
     }
     .fonction{
         display: flex;
@@ -90,6 +92,9 @@ $police-titre-weight: 500;
         &__choix a:hover .icone{
             color: #9356DC;
         }
+        &__choix a:hover .fonction__choix--restau{
+            background-color: #F5EDFF;
+        }
         &__choix {
             &--restau{
                 display: flex;
@@ -99,9 +104,9 @@ $police-titre-weight: 500;
                 border: 1px #f6f6f7 solid;
                 height: 100px;
                 border-radius: 30px;
-                box-shadow: 6px 6px 6px #eaeaea;
+                box-shadow: 6px 6px 6px #646262;
             }
-             &--restau h3{
+            &--restau h3{
                 height: 35px;
                 width: 35px;
                 border-radius: 17.5px;
@@ -154,6 +159,7 @@ $police-titre-weight: 500;
                 margin: 0% 5% 7% 5%; 
                 background-color: white;  
                 border-radius: 25px;
+                box-shadow:6px 6px 6px #646262;
             }
             &--menu img{
                 width: 100%;
@@ -222,6 +228,10 @@ $police-titre-weight: 500;
             width: 25px;
             margin-right: 20px;
             padding: 0px;
+        }
+        &__menu a{
+            text-decoration: none;
+            color: inherit;
         }
     }
 }
