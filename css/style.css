@@ -6,6 +6,56 @@ footer h3 {
   font-family: 'Shrikhand', sans-serif;
 }
 
+@-webkit-keyframes page-loading {
+  100% {
+    -webkit-transform: translateY(-3000px);
+            transform: translateY(-3000px);
+  }
+}
+
+@keyframes page-loading {
+  100% {
+    -webkit-transform: translateY(-3000px);
+            transform: translateY(-3000px);
+  }
+}
+
+@-webkit-keyframes rotate-spinner {
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate-spinner {
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes wave {
+  0%, 40%, 100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  20% {
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
+  }
+}
+
+@keyframes wave {
+  0%, 40%, 100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  20% {
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
+  }
+}
+
 @media screen and (max-width: 768px) {
   .entete {
     width: 100%;
@@ -289,6 +339,57 @@ footer h3 {
   .pied-de-page__menu a {
     text-decoration: none;
     color: inherit;
+  }
+  .loading {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(120deg, #FF79DA, #9356DC);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: fixed;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    inset: 0;
+    -webkit-animation: page-loading 1500ms 3000ms both;
+            animation: page-loading 1500ms 3000ms both;
+  }
+  .loading__spinner {
+    color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: 80px;
+    margin-top: 50px;
+    -webkit-animation: rotate-spinner 2000ms linear infinite;
+            animation: rotate-spinner 2000ms linear infinite;
+  }
+  .titre {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: 70px;
+    font-weight: 800;
+  }
+  .titre span {
+    color: white;
+    position: relative;
+    display: inline-block;
+    -webkit-animation: wave 500ms infinite;
+            animation: wave 500ms infinite;
+    -webkit-animation-delay: calc(100ms * var(--i));
+            animation-delay: calc(100ms * var(--i));
   }
 }
 /*# sourceMappingURL=style.css.map */
