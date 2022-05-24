@@ -35,24 +35,40 @@ footer h3 {
 }
 
 @-webkit-keyframes wave {
-  0%, 40%, 100% {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  40% {
     -webkit-transform: translateY(0);
             transform: translateY(0);
   }
   20% {
     -webkit-transform: translateY(-20px);
             transform: translateY(-20px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 
 @keyframes wave {
-  0%, 40%, 100% {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  40% {
     -webkit-transform: translateY(0);
             transform: translateY(0);
   }
   20% {
     -webkit-transform: translateY(-20px);
             transform: translateY(-20px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 
@@ -384,12 +400,10 @@ footer h3 {
   }
   .titre span {
     color: white;
-    position: relative;
-    display: inline-block;
-    -webkit-animation: wave 500ms infinite;
-            animation: wave 500ms infinite;
-    -webkit-animation-delay: calc(100ms * var(--i));
-            animation-delay: calc(100ms * var(--i));
+    -webkit-animation: wave 800ms infinite;
+            animation: wave 800ms infinite;
+    -webkit-animation-delay: calc(.1s * var(--i));
+            animation-delay: calc(.1s * var(--i));
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -18,11 +18,17 @@ $police-titre-weight: 500;
     }
 }
 @keyframes wave{
-    0%,40%,100%{
+    0%{
+        transform: translateY(0);
+    }
+    40%{
         transform: translateY(0);
     }
     20%{
         transform: translateY(-20px);
+    }
+    100%{
+        transform: translateY(0);
     }
 }
 
@@ -281,10 +287,8 @@ $police-titre-weight: 500;
     }
     .titre span{
         color: white;
-        position: relative;
-        display: inline-block;
-        animation: wave 500ms infinite;
-        animation-delay: calc(100ms * var(--i));
+        animation: wave 800ms infinite;
+        animation-delay: calc(.1s * var(--i));
 
     }
 }
