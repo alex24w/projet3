@@ -127,15 +127,20 @@ h1{
         }
     
     }
-    .repas button{
+    .repas .button-menu{
         height: 80px;
         width: 50%;
+        box-shadow: 5px 5px 2px grey;
         margin: auto;
         border: none;
         border-radius: 40px;
         background:linear-gradient(120deg,#FF79DA,#9356DC);
         margin-bottom: 70px;
         margin-top: 30px;
+    }
+    .repas .button-menu:hover{
+        background:linear-gradient(120deg, #f99edf, #a374db);
+        box-shadow:7px 7px 3px rgb(69, 69, 69) ;
     }
     .repas span{
         color: white;

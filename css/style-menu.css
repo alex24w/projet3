@@ -169,15 +169,22 @@ h1 {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .repas button {
+  .repas .button-menu {
     height: 80px;
     width: 50%;
+    -webkit-box-shadow: 5px 5px 2px grey;
+            box-shadow: 5px 5px 2px grey;
     margin: auto;
     border: none;
     border-radius: 40px;
     background: linear-gradient(120deg, #FF79DA, #9356DC);
     margin-bottom: 70px;
     margin-top: 30px;
+  }
+  .repas .button-menu:hover {
+    background: linear-gradient(120deg, #f99edf, #a374db);
+    -webkit-box-shadow: 7px 7px 3px #454545;
+            box-shadow: 7px 7px 3px #454545;
   }
   .repas span {
     color: white;
