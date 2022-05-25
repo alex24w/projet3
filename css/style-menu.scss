@@ -90,9 +90,12 @@ h1{
                 height: 110px;
                 display: flex;
                 align-items: center;
-            }
-            &--check i{
-                animation: check-rotation ;
+                background: #99E2D0;
+                height: 110px;
+                width: 140px;
+                opacity: 0;
+                transform: translateX(140px);
+                transition: transform 300ms ease-in-out;
             }
             &--assiette{
                 display: flex;
@@ -135,6 +138,7 @@ h1{
                 white-space: nowrap;
                 overflow: hidden;
                 text-overflow: ellipsis;  
+                transform: translateX(0px);
 
             }
             &--assiette .ligne2 i{
@@ -209,11 +213,21 @@ h1{
     .choix{
         &--carte{
             display: flex;
-            border: 1px yellow solid;
             height: 110px;
             margin-bottom: 20px;
             background-color: white;
             border-radius: 25px;
+        }
+        &--carte:hover .ligne2 h2{
+            transform: translateX(-100px);
+            padding-left: 120px;
+        }
+        &--carte:hover .repas__plats--check{
+            transform: translateX(0px);
+            opacity: 1;
+        }
+        &--carte:hover i{
+            animation: check-rotation 300ms both alternate ease;
         }
         &--1{
             animation: animation-choix 600ms 200ms ease-in-out both;
