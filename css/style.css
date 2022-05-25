@@ -381,6 +381,7 @@ footer h3 {
         -ms-flex-pack: center;
             justify-content: center;
     inset: 0;
+    z-index: 4;
     -webkit-animation: page-loading 1500ms 3000ms both;
             animation: page-loading 1500ms 3000ms both;
   }

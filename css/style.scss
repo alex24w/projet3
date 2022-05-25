@@ -222,6 +222,7 @@ $police-titre-weight: 500;
             padding: 0 12px;
             font-size: 25px;
             font-weight: bold;
+           
         }
     }
     .pied-de-page{
@@ -269,6 +270,7 @@ $police-titre-weight: 500;
         flex-direction: column;
         justify-content: center;
         inset: 0;
+        z-index: 4;
         animation: page-loading 1500ms 3000ms both;
 
         &__titre{
