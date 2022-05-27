@@ -16,7 +16,7 @@ h1{
         opacity: 1;
     }
 }
-@keyframes check-ratation{
+@keyframes check-rotation{
     0%{
         transform: rotate(0deg);
     }
@@ -67,9 +67,11 @@ h1{
         height: 110px;
         margin: 0% 3% 3% 3%;
         border-radius: 25px;
+        position: relative;
     }
     .card .check{
         position: absolute;
+        right: 0px;
         width: 90px;
         height: 110px;
         background-color: #99E2D0;
@@ -77,7 +79,7 @@ h1{
         align-items: center;
         justify-content: center;
         transform: translateX(100%);
-        transition: 300ms ease-in-out;
+        transition: 300ms ease-in;
     }
     .card .check i{
         font-size: 30px;
@@ -85,7 +87,13 @@ h1{
     }
     .card:hover .check{
         transform: translateX(0%);
-        transition: 300ms ease-in-out;
+        transition: 300ms ease-in;
+    }
+    .card:hover .ligne2{
+        padding-right: 85px;
+    }
+    .card:hover .check i {
+        animation: check-rotation 400ms 100ms both;
     }
     .repas{
         display: flex;
@@ -151,7 +159,8 @@ h1{
             &--assiette .ligne2{
                 display: flex;
                 align-items: flex-end;
-                margin-right: 3%; 
+                margin-right: 3%;
+                padding-left: 10px; 
                 transition: 300ms ease-in ;  
             }
             &--assiette .ligne2 h2{
