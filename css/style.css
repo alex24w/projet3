@@ -110,7 +110,7 @@ footer h3 {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 996px) {
   .entete {
     width: 100%;
     display: -webkit-box;
@@ -170,7 +170,7 @@ footer h3 {
   }
   .explication__titre h1 {
     text-align: center;
-    font-size: 40px;
+    font-size: 35px;
     margin: 50px 10% 5px 10%;
     font-weight: 500;
   }
@@ -217,19 +217,15 @@ footer h3 {
     margin-bottom: 60px;
   }
   .fonction__titre h2 {
-    font-size: 40px;
+    font-size: 35px;
     font-weight: 500;
     margin-left: 5%;
     margin-top: 60px;
   }
-  .fonction__choix a {
-    text-decoration: none;
-    color: inherit;
-  }
-  .fonction__choix a:hover .icone {
+  .fonction__choix .fonction__choix--restau:hover .icone {
     color: #9356DC;
   }
-  .fonction__choix a:hover .fonction__choix--restau {
+  .fonction__choix .fonction__choix--restau:hover {
     background-color: #F5EDFF;
   }
   .fonction__choix--restau {
@@ -287,7 +283,7 @@ footer h3 {
     background-color: #f6f6f7;
   }
   .restaurants__titre h2 {
-    font-size: 40px;
+    font-size: 35px;
     font-weight: 500;
     margin-left: 5%;
     margin-top: 60px;
@@ -323,6 +319,376 @@ footer h3 {
   .restaurants__cartes--menu img {
     width: 100%;
     height: 300px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 25px 25px 0px 0px;
+  }
+  .restaurants__cartes--menu .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .restaurants__cartes--menu .menu .nom-menu h2 {
+    font-size: 30px;
+    margin: 15px 0px 5px 20px;
+  }
+  .restaurants__cartes--menu .menu .nom-menu h3 {
+    font-size: 30px;
+    font-weight: 200;
+    margin: 5px 0px 15px 20px;
+  }
+  .restaurants__cartes--menu .menu .coeur-plein {
+    font-size: 35px;
+    margin-right: 35px;
+  }
+  .restaurants__cartes--menu .menu .coeur-vide {
+    font-size: 35px;
+    margin-right: 35px;
+    opacity: 0;
+    position: absolute;
+  }
+  .restaurants__cartes--menu .menu .coeur-vide:hover {
+    -webkit-animation: heart 1000ms ease-in forwards;
+            animation: heart 1000ms ease-in forwards;
+  }
+  .restaurants__cartes .new1 {
+    position: absolute;
+    right: 50px;
+    top: 20px;
+    border-radius: 3px;
+    background-color: #99E2D0;
+    color: #008766;
+    padding: 0 12px;
+    font-size: 25px;
+    font-weight: bold;
+  }
+  .restaurants__cartes .new2 {
+    position: absolute;
+    right: 50px;
+    top: 465px;
+    border-radius: 3px;
+    background-color: #99E2D0;
+    color: #008766;
+    padding: 0 12px;
+    font-size: 25px;
+    font-weight: bold;
+  }
+  .pied-de-page {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: #353535;
+  }
+  .pied-de-page__titre {
+    color: white;
+    font-size: 22px;
+    font-weight: 100;
+    margin-left: 5%;
+  }
+  .pied-de-page__menu {
+    color: white;
+    margin: 0% 0% 10% 5%;
+  }
+  .pied-de-page__menu .interaction {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    padding: 0px;
+  }
+  .pied-de-page__menu h2 {
+    font-size: 25px;
+    font-weight: 300;
+    padding: 0px;
+    margin-bottom: 0px;
+  }
+  .pied-de-page__menu i {
+    font-size: 23px;
+    width: 25px;
+    margin-right: 20px;
+    padding: 0px;
+  }
+  .pied-de-page__menu a {
+    text-decoration: none;
+    color: inherit;
+  }
+  .loading {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(120deg, #FF79DA, #9356DC);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: fixed;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    inset: 0;
+    z-index: 4;
+    -webkit-animation: page-loading 1500ms 3000ms both;
+            animation: page-loading 1500ms 3000ms both;
+  }
+  .loading__titre {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: 70px;
+    font-weight: 800;
+  }
+  .loading__titre span {
+    color: white;
+    -webkit-animation: wave 800ms infinite;
+            animation: wave 800ms infinite;
+    -webkit-animation-delay: calc(.1s * var(--i));
+            animation-delay: calc(.1s * var(--i));
+  }
+  .loading__spinner {
+    color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: 80px;
+    margin-top: 50px;
+    -webkit-animation: rotate-spinner 2000ms linear infinite;
+            animation: rotate-spinner 2000ms linear infinite;
+  }
+}
+
+/* version desktop et tablette */
+@media screen and (min-width: 997px) {
+  .entete {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .entete__logo {
+    margin: 30px 0px 30px 0px;
+  }
+  .entete__logo img {
+    height: 50px;
+    width: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: auto;
+  }
+  .entete__location {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-color: #eaeaea;
+    border-top: 3px solid #d3d3d3;
+  }
+  .entete__location i {
+    font-size: 25px;
+    margin-right: 5px;
+  }
+  .entete__location h2 {
+    margin-left: 5px;
+    font-size: 25px;
+    font-weight: 400;
+  }
+  .explication {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-color: #f6f6f7;
+  }
+  .explication__titre h1 {
+    text-align: center;
+    font-size: 35px;
+    margin: 50px 10% 5px 10%;
+    font-weight: 500;
+  }
+  .explication__titre h2 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 100;
+    margin: 20px 5% 50px 5%;
+  }
+  .explication__button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .explication__button .button-acceuil {
+    height: 55px;
+    width: 300px;
+    -webkit-box-shadow: 5px 5px 2px grey;
+            box-shadow: 5px 5px 2px grey;
+    margin: auto;
+    border: none;
+    border-radius: 27.5px;
+    background: linear-gradient(120deg, #FF79DA, #9356DC);
+    margin-bottom: 70px;
+    color: white;
+    font-size: 22px;
+  }
+  .explication__button .button-acceuil:hover {
+    background: linear-gradient(120deg, #f99edf, #a374db);
+    -webkit-box-shadow: 7px 7px 3px #454545;
+            box-shadow: 7px 7px 3px #454545;
+  }
+  .fonction {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 60px;
+  }
+  .fonction__titre h2 {
+    font-size: 35px;
+    font-weight: 500;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 60px;
+    margin-bottom: 50px;
+  }
+  .fonction__choix .fonction__choix--restau:hover .icone {
+    color: #9356DC;
+  }
+  .fonction__choix .fonction__choix--restau:hover {
+    background-color: #F5EDFF;
+  }
+  .fonction__choix {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .fonction__choix--restau {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 30px 2% 30px 2%;
+    background-color: #f6f7f6;
+    border: 1px #f6f7f6 solid;
+    height: 70px;
+    border-radius: 20px;
+    -webkit-box-shadow: 6px 6px 6px #646262;
+            box-shadow: 6px 6px 6px #646262;
+  }
+  .fonction__choix--restau h3 {
+    opacity: 0;
+  }
+  .fonction__choix--restau .icone {
+    font-size: 22px;
+    width: 28px;
+    color: grey;
+    margin: 0px 30px 0px 10px;
+    white-space: nowrap;
+  }
+  .fonction__choix--restau h2 {
+    font-size: 25px;
+    font-weight: 400;
+    margin-right: 50px;
+  }
+  .restaurants {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: #f6f6f7;
+  }
+  .restaurants__titre h2 {
+    font-size: 35px;
+    font-weight: 500;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 60px;
+    margin-bottom: 100px;
+  }
+  .restaurants__cartes a {
+    text-decoration: none;
+    color: inherit;
+  }
+  .restaurants__cartes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 50px;
+    position: relative;
+  }
+  .restaurants__cartes--menu {
+    width: 40%;
+    height: auto;
+    margin: 0% 5% 7% 5%;
+    background-color: white;
+    border-radius: 25px;
+    -webkit-box-shadow: 6px 6px 6px #646262;
+            box-shadow: 6px 6px 6px #646262;
+  }
+  .restaurants__cartes--menu img {
+    width: 100%;
+    height: 250px;
     -o-object-fit: cover;
        object-fit: cover;
     border-radius: 25px 25px 0px 0px;
