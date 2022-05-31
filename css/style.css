@@ -761,13 +761,24 @@ footer h3 {
   }
   .pied-de-page__titre {
     color: white;
-    font-size: 22px;
+    font-size: 30px;
     font-weight: 100;
-    margin-left: 5%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .pied-de-page__menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     color: white;
-    margin: 0% 0% 10% 5%;
+    margin: 0% 3% 5% 3%;
   }
   .pied-de-page__menu .interaction {
     display: -webkit-box;
@@ -787,7 +798,7 @@ footer h3 {
   .pied-de-page__menu i {
     font-size: 23px;
     width: 25px;
-    margin-right: 20px;
+    margin-right: 0px;
     padding: 0px;
   }
   .pied-de-page__menu a {

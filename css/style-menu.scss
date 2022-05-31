@@ -42,7 +42,7 @@ h1{
     }
 }
 
-@media screen and (max-width:768px){
+@media screen and (max-width:996px){
 
     .entete{
         display: flex;
@@ -290,6 +290,268 @@ h1{
             font-size: 23px;
             width: 25px;
             margin-right: 20px;
+            padding: 0px;
+        }
+        &__menu a{
+            text-decoration: none;
+            color: inherit;
+        }
+    }
+}
+
+@media screen and (min-width:997px){
+
+    .entete{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+    .entete a{
+        text-decoration: none;
+    }
+    .entete i{
+        font-size: 35px;
+        color: black;
+        position:absolute;
+        left: 50px;
+        top: 30px;
+
+    }
+    .entete img{
+        height: 50px;
+        width: auto;
+    }
+    .fond{
+        width: 100%;
+        margin: 0px;
+        margin-top: 20px;
+    }
+    .fond img{
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+
+    }
+    .card{
+        display: flex;
+        background-color: white;
+        width: 90%;
+        overflow: hidden;
+        height: 110px;
+        margin: 0% 0% 3% 0%;
+        border-radius: 25px;
+        position: relative;
+    }
+    .card .check{
+        position: absolute;
+        right: 0px;
+        width: 90px;
+        height: 110px;
+        background-color: #99E2D0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transform: translateX(100%);
+        transition: 300ms ease-in;
+    }
+    .card .check i{
+        font-size: 30px;
+        color: white;
+    }
+    .card:hover .check{
+        transform: translateX(0%);
+        transition: 300ms ease-in;
+    }
+    .card:hover .ligne2{
+        padding-right: 85px;
+    }
+    .card:hover .check i {
+        animation: check-rotation 400ms 100ms both;
+    }
+    .repas{
+        display: flex;
+        flex-direction: column;
+        background-color: #f6f7f6;
+        border-radius: 20px 20px 0px 0px;
+        position: relative;
+        top: -25px;
+        &__titre{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        &__titre h1{
+            font-size: 42px;
+            font-weight: 300;
+            padding-left: 100px;
+        }
+        &__titre .coeur-plein{
+            font-size: 42px;
+            padding-right: 100px;
+        }
+        &__titre .coeur-vide{
+            font-size: 42px;
+            margin-right: 100px;
+            opacity: 0;
+            position: absolute;
+            right: 0px;
+        }
+        &__titre .coeur-vide:hover{
+            animation: heart 1000ms ease-in forwards;
+        }
+        &__plats{
+            border: 1px red solid;
+            margin-bottom: 40px;
+            display: flex;
+            &--titre{
+                margin-left: 3%;
+                width: 50px;
+                margin-right: 90px;
+            }
+            &--titre h2{
+                font-size: 25px;
+                font-weight: 300;
+            }
+            &--assiette{
+                display: flex;
+                width: 100%;
+                justify-content: space-between;
+            }
+            &--assiette .ligne1{
+                display: flex;
+                justify-content: space-between;
+                flex-direction: column;
+                white-space: nowrap;
+                overflow: hidden;
+                width: 100%;
+                height: 110px;    
+            }
+            &--assiette .ligne1 h2{
+                font-size: 27px;
+                font-weight: 400;
+                margin: 16px 0px 0px 15px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;           
+            }
+            &--assiette .ligne1 p{
+                font-size: 23px;
+                font-weight: 100;
+                margin:0px 0px 16px 15px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+            &--assiette .ligne2{
+                display: flex;
+                align-items: flex-end;
+                margin-right: 3%;
+                padding-left: 10px; 
+                transition: 300ms ease-in ;  
+            }
+            &--assiette .ligne2 h2{
+                font-size: 23px;
+                font-weight: 500;
+                margin-bottom: 35%;                        
+            }
+        }
+    }
+    .choix{
+        border: 1px violet solid;
+        width: 100%;
+        &--1{
+            animation: animation-choix 600ms 200ms ease-in-out both;
+        }
+        &--2{
+            animation: animation-choix 600ms 400ms ease-in-out both;
+        }
+        &--3{
+            animation: animation-choix 600ms 600ms ease-in-out both;
+        }
+        &--4{
+            animation: animation-choix 600ms 800ms ease-in-out both;
+        }
+        &--5{
+            animation: animation-choix 600ms 1000ms ease-in-out both;
+        }
+        &--6{
+            animation: animation-choix 600ms 1200ms ease-in-out both;
+        }
+        &--7{
+            animation: animation-choix 600ms 1400ms ease-in-out both;
+        }
+        &--8{
+            animation: animation-choix 600ms 1600ms ease-in-out both;
+        }
+        &--9{
+            animation: animation-choix 600ms 1800ms ease-in-out both;
+        }
+        &--10{
+            animation: animation-choix 600ms 2000ms ease-in-out both;
+        }
+        &--11{
+            animation: animation-choix 600ms 2200ms ease-in-out both;
+        }
+        &--12{
+            animation: animation-choix 600ms 2400ms ease-in-out both;
+        }
+        &--13{
+            animation: animation-choix 600ms 2600ms ease-in-out both;
+        }
+    }
+    .repas .button-menu{
+        height: 70px;
+        width: 300px;
+        box-shadow: 5px 5px 2px grey;
+        margin: auto;
+        border: none;
+        border-radius: 35px;
+        background:linear-gradient(120deg,#FF79DA,#9356DC);
+        margin-bottom: 70px;
+        color: white;
+        font-size: 23px;
+    }
+    .repas .button-menu:hover{
+        background:linear-gradient(120deg, #f99edf, #a374db);
+        box-shadow:7px 7px 3px rgb(69, 69, 69) ;
+    }
+    .repas span{
+        color: white;
+        font-size: 25px;
+    }
+    .pied-de-page{
+        display: flex;
+        flex-direction: column;
+        background-color: #353535;
+        &__titre{
+            color: white;
+            font-size: 30px;
+            font-weight: 100;
+            display: flex;
+            justify-content: center;
+        }
+        &__menu{
+            display: flex;
+            justify-content: space-between;
+            color: white;
+            margin: 0% 3% 5% 3%;
+        }
+        &__menu .interaction{
+            display: flex;
+            align-items: baseline;
+            padding: 0px;
+        }
+        &__menu h2{
+            font-size: 25px;
+            font-weight: 300;
+            padding: 0px;
+            margin-bottom: 0px;
+        }
+        &__menu i{
+            font-size: 23px;
+            width: 25px;
+            margin-right: 10px;
             padding: 0px;
         }
         &__menu a{

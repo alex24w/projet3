@@ -551,13 +551,16 @@ $police-titre-weight: 500;
         background-color: #353535;
         &__titre{
             color: white;
-            font-size: 22px;
+            font-size: 30px;
             font-weight: 100;
-            margin-left: 5%
+            display: flex;
+            justify-content: center;
         }
         &__menu{
+            display: flex;
+            justify-content: space-between;
             color: white;
-            margin: 0% 0% 10% 5%;
+            margin: 0% 3% 5% 3%;
         }
         &__menu .interaction{
             display: flex;
@@ -573,7 +576,7 @@ $police-titre-weight: 500;
         &__menu i{
             font-size: 23px;
             width: 25px;
-            margin-right: 20px;
+            margin-right: 0px;
             padding: 0px;
         }
         &__menu a{
