@@ -649,20 +649,16 @@ footer h3 {
     background-color: #f6f6f7;
   }
   .restaurants__titre h2 {
-    font-size: 35px;
-    font-weight: 500;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    font-size: 35px;
+    font-weight: 500;
+    margin-bottom: 60px;
     margin-top: 60px;
-    margin-bottom: 100px;
-  }
-  .restaurants__cartes a {
-    text-decoration: none;
-    color: inherit;
   }
   .restaurants__cartes {
     display: -webkit-box;
@@ -671,16 +667,15 @@ footer h3 {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     width: 100%;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    height: 100%;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     margin-bottom: 50px;
     position: relative;
   }
   .restaurants__cartes--menu {
-    width: 40%;
+    width: 100%;
     height: auto;
-    margin: 0% 5% 7% 5%;
     background-color: white;
     border-radius: 25px;
     -webkit-box-shadow: 6px 6px 6px #646262;
@@ -688,7 +683,7 @@ footer h3 {
   }
   .restaurants__cartes--menu img {
     width: 100%;
-    height: 250px;
+    height: 300px;
     -o-object-fit: cover;
        object-fit: cover;
     border-radius: 25px 25px 0px 0px;
@@ -726,6 +721,15 @@ footer h3 {
   .restaurants__cartes--menu .menu .coeur-vide:hover {
     -webkit-animation: heart 1000ms ease-in forwards;
             animation: heart 1000ms ease-in forwards;
+  }
+  .restaurants__cartes a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-decoration: none;
+    color: inherit;
+    width: 45%;
+    margin: 2% 0% 2% 0%;
   }
   .restaurants__cartes .new1 {
     position: absolute;

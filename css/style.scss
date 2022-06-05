@@ -462,35 +462,31 @@ $police-titre-weight: 500;
         flex-direction: column;
         background-color: #f6f6f7;
         &__titre h2{
-            font-size: $police-titre;
-            font-weight: $police-titre-weight;
             display: flex;
             justify-content: center;
+            font-size: $police-titre;
+            font-weight: $police-titre-weight;
+            margin-bottom: 60px;
             margin-top: 60px;
-            margin-bottom: 100px;
-        }
-        &__cartes a{
-            text-decoration: none;
-            color: inherit;
         }
         &__cartes{
             display: flex;
             flex-wrap: wrap;
             width: 100%;
-            justify-content: center;
+            height: 100%;
+            justify-content: space-around;
             margin-bottom: 50px;
             position: relative;
             &--menu{
-                width: 40%;               
+                width: 100%;
                 height: auto;
-                margin: 0% 5% 7% 5%; 
                 background-color: white;  
                 border-radius: 25px;
                 box-shadow:6px 6px 6px #646262;
             }
             &--menu img{
                 width: 100%;
-                height: 250px;
+                height: 300px;
                 object-fit: cover;
                 border-radius: 25px 25px 0px 0px;
             }
@@ -521,6 +517,13 @@ $police-titre-weight: 500;
             &--menu .menu .coeur-vide:hover{
                 animation: heart 1000ms ease-in forwards;
             }
+        }
+        &__cartes a{
+            display: flex;
+            text-decoration: none;
+            color: inherit;
+            width: 45%;
+            margin: 2% 0% 2% 0%;
         }
         &__cartes .new1{
             position: absolute;
