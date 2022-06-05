@@ -288,10 +288,6 @@ footer h3 {
     margin-left: 5%;
     margin-top: 60px;
   }
-  .restaurants__cartes a {
-    text-decoration: none;
-    color: inherit;
-  }
   .restaurants__cartes {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -305,7 +301,6 @@ footer h3 {
         -ms-flex-pack: center;
             justify-content: center;
     margin-bottom: 50px;
-    position: relative;
   }
   .restaurants__cartes--menu {
     width: auto;
@@ -357,10 +352,15 @@ footer h3 {
     -webkit-animation: heart 1000ms ease-in forwards;
             animation: heart 1000ms ease-in forwards;
   }
-  .restaurants__cartes .new1 {
+  .restaurants__cartes a {
+    text-decoration: none;
+    color: inherit;
+    position: relative;
+  }
+  .restaurants__cartes a .new1 {
     position: absolute;
-    right: 50px;
-    top: 20px;
+    right: 8%;
+    top: 4%;
     border-radius: 3px;
     background-color: #99E2D0;
     color: #008766;
@@ -368,10 +368,10 @@ footer h3 {
     font-size: 25px;
     font-weight: bold;
   }
-  .restaurants__cartes .new2 {
+  .restaurants__cartes a .new2 {
     position: absolute;
-    right: 50px;
-    top: 465px;
+    right: 8%;
+    top: 4%;
     border-radius: 3px;
     background-color: #99E2D0;
     color: #008766;
@@ -671,7 +671,6 @@ footer h3 {
     -ms-flex-pack: distribute;
         justify-content: space-around;
     margin-bottom: 50px;
-    position: relative;
   }
   .restaurants__cartes--menu {
     width: 100%;
@@ -730,10 +729,11 @@ footer h3 {
     color: inherit;
     width: 45%;
     margin: 2% 0% 2% 0%;
+    position: relative;
   }
-  .restaurants__cartes .new1 {
+  .restaurants__cartes a .new1 {
     position: absolute;
-    right: 50px;
+    right: 30px;
     top: 20px;
     border-radius: 3px;
     background-color: #99E2D0;
@@ -742,10 +742,10 @@ footer h3 {
     font-size: 25px;
     font-weight: bold;
   }
-  .restaurants__cartes .new2 {
+  .restaurants__cartes a .new2 {
     position: absolute;
-    right: 50px;
-    top: 465px;
+    right: 30px;
+    top: 20px;
     border-radius: 3px;
     background-color: #99E2D0;
     color: #008766;

@@ -185,17 +185,12 @@ $police-titre-weight: 500;
             margin-left: 5%;
             margin-top: 60px;
         }
-        &__cartes a{
-            text-decoration: none;
-            color: inherit;
-        }
         &__cartes{
             display: flex;
             flex-direction: column;
             width: 100%;
             justify-content: center;
             margin-bottom: 50px;
-            position: relative;
             &--menu{
                 width: auto;
                 height: auto;
@@ -238,10 +233,15 @@ $police-titre-weight: 500;
                 animation: heart 1000ms ease-in forwards;
             }
         }
-        &__cartes .new1{
+        &__cartes a{
+            text-decoration: none;
+            color: inherit;
+            position: relative;
+        }
+        &__cartes a .new1{
             position: absolute;
-            right: 50px;
-            top: 20px;
+            right: 8%;
+            top: 4%;
             border-radius: 3px;
             background-color: #99E2D0;
             color: #008766;
@@ -249,10 +249,10 @@ $police-titre-weight: 500;
             font-size: 25px;
             font-weight: bold;  
         }
-        &__cartes .new2{
+        &__cartes a .new2{
             position: absolute;
-            right: 50px;
-            top: 465px;
+            right: 8%;
+            top: 4%;
             border-radius: 3px;
             background-color: #99E2D0;
             color: #008766;
@@ -476,7 +476,6 @@ $police-titre-weight: 500;
             height: 100%;
             justify-content: space-around;
             margin-bottom: 50px;
-            position: relative;
             &--menu{
                 width: 100%;
                 height: auto;
@@ -524,10 +523,11 @@ $police-titre-weight: 500;
             color: inherit;
             width: 45%;
             margin: 2% 0% 2% 0%;
+            position: relative;
         }
-        &__cartes .new1{
+        &__cartes a .new1{
             position: absolute;
-            right: 50px;
+            right: 30px;
             top: 20px;
             border-radius: 3px;
             background-color: #99E2D0;
@@ -536,10 +536,10 @@ $police-titre-weight: 500;
             font-size: 25px;
             font-weight: bold;  
         }
-        &__cartes .new2{
+        &__cartes a .new2{
             position: absolute;
-            right: 50px;
-            top: 465px;
+            right: 30px;
+            top: 20px;
             border-radius: 3px;
             background-color: #99E2D0;
             color: #008766;
