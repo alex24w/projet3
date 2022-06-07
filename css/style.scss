@@ -548,6 +548,7 @@ $police-titre-weight: 500;
             font-weight: bold;  
         }
     }
+
     .pied-de-page{
         display: flex;
         flex-direction: column;
@@ -579,7 +580,7 @@ $police-titre-weight: 500;
         &__menu i{
             font-size: 23px;
             width: 25px;
-            margin-right: 0px;
+            margin-right: 10px;
             padding: 0px;
         }
         &__menu a{
