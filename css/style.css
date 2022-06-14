@@ -111,7 +111,7 @@ footer h3 {
   }
 }
 
-@media screen and (max-width: 996px) {
+@media screen and (max-width: 899px) {
   .entete {
     width: 100%;
     display: -webkit-box;
@@ -126,7 +126,7 @@ footer h3 {
     margin: 30px 0px 30px 0px;
   }
   .entete__logo img {
-    height: 50px;
+    height: 35px;
     width: auto;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -147,12 +147,12 @@ footer h3 {
     border-top: 3px solid #d3d3d3;
   }
   .entete__location i {
-    font-size: 25px;
+    font-size: 20px;
     margin-right: 5px;
   }
   .entete__location h2 {
     margin-left: 5px;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 400;
   }
   .explication {
@@ -171,13 +171,13 @@ footer h3 {
   }
   .explication__titre h1 {
     text-align: center;
-    font-size: 35px;
+    font-size: 25px;
     margin: 50px 10% 5px 10%;
     font-weight: 500;
   }
   .explication__titre h2 {
     text-align: center;
-    font-size: 27px;
+    font-size: 17px;
     font-weight: 100;
     margin: 20px 5% 50px 5%;
   }
@@ -190,7 +190,7 @@ footer h3 {
             justify-content: center;
   }
   .explication__button .button-acceuil {
-    height: 70px;
+    height: 50px;
     width: 60%;
     -webkit-box-shadow: 5px 5px 2px grey;
             box-shadow: 5px 5px 2px grey;
@@ -200,7 +200,7 @@ footer h3 {
     background: linear-gradient(120deg, #FF79DA, #9356DC);
     margin-bottom: 70px;
     color: white;
-    font-size: 25px;
+    font-size: 15px;
   }
   .explication__button .button-acceuil:hover {
     background: linear-gradient(120deg, #f99edf, #a374db);
@@ -218,7 +218,7 @@ footer h3 {
     margin-bottom: 60px;
   }
   .fonction__titre h2 {
-    font-size: 35px;
+    font-size: 25px;
     font-weight: 500;
     margin-left: 5%;
     margin-top: 60px;
@@ -239,15 +239,15 @@ footer h3 {
     margin: 30px 5% 30px 5%;
     background-color: #f6f6f7;
     border: 1px #f6f6f7 solid;
-    height: 100px;
-    border-radius: 30px;
+    height: 65px;
+    border-radius: 20px;
     -webkit-box-shadow: 6px 6px 6px #646262;
             box-shadow: 6px 6px 6px #646262;
   }
   .fonction__choix--restau h3 {
-    height: 35px;
-    width: 35px;
-    border-radius: 17.5px;
+    height: 25px;
+    width: 25px;
+    border-radius: 12.5px;
     color: white;
     background-color: #9356DC;
     display: -webkit-box;
@@ -259,18 +259,18 @@ footer h3 {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-left: -17.5px;
-    font-size: 23px;
+    margin-left: -7.5px;
+    font-size: 13px;
   }
   .fonction__choix--restau .icone {
-    font-size: 25px;
-    width: 28px;
+    font-size: 20px;
+    width: 23px;
     color: grey;
     margin: 0px 30px 0px 30px;
     white-space: nowrap;
   }
   .fonction__choix--restau h2 {
-    font-size: 25px;
+    font-size: 15px;
     font-weight: 400;
   }
   .restaurants {
@@ -284,7 +284,7 @@ footer h3 {
     background-color: #f6f6f7;
   }
   .restaurants__titre h2 {
-    font-size: 35px;
+    font-size: 25px;
     font-weight: 500;
     margin-left: 5%;
     margin-top: 60px;
@@ -314,7 +314,7 @@ footer h3 {
   }
   .restaurants__cartes--menu img {
     width: 100%;
-    height: 300px;
+    height: 175px;
     -o-object-fit: cover;
        object-fit: cover;
     border-radius: 25px 25px 0px 0px;
@@ -331,21 +331,21 @@ footer h3 {
             align-items: center;
   }
   .restaurants__cartes--menu .menu .nom-menu h2 {
-    font-size: 30px;
+    font-size: 20px;
     margin: 15px 0px 5px 20px;
   }
   .restaurants__cartes--menu .menu .nom-menu h3 {
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 200;
     margin: 5px 0px 15px 20px;
   }
   .restaurants__cartes--menu .menu .coeur-plein {
-    font-size: 35px;
-    margin-right: 35px;
+    font-size: 25px;
+    margin-right: 25px;
   }
   .restaurants__cartes--menu .menu .coeur-vide {
-    font-size: 35px;
-    margin-right: 35px;
+    font-size: 25px;
+    margin-right: 25px;
     opacity: 0;
     position: absolute;
   }
@@ -366,7 +366,7 @@ footer h3 {
     background-color: #99E2D0;
     color: #008766;
     padding: 0 12px;
-    font-size: 25px;
+    font-size: 15px;
     font-weight: bold;
   }
   .restaurants__cartes a .new2 {
@@ -377,7 +377,7 @@ footer h3 {
     background-color: #99E2D0;
     color: #008766;
     padding: 0 12px;
-    font-size: 25px;
+    font-size: 15px;
     font-weight: bold;
   }
   .pied-de-page {
@@ -392,7 +392,7 @@ footer h3 {
   }
   .pied-de-page__titre {
     color: white;
-    font-size: 22px;
+    font-size: 15px;
     font-weight: 100;
     margin-left: 5%;
   }
@@ -410,15 +410,15 @@ footer h3 {
     padding: 0px;
   }
   .pied-de-page__menu h2 {
-    font-size: 25px;
+    font-size: 15px;
     font-weight: 300;
     padding: 0px;
     margin-bottom: 0px;
   }
   .pied-de-page__menu i {
-    font-size: 23px;
+    font-size: 13px;
     width: 25px;
-    margin-right: 20px;
+    margin-right: 5px;
     padding: 0px;
   }
   .pied-de-page__menu a {
@@ -452,7 +452,7 @@ footer h3 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    font-size: 70px;
+    font-size: 50px;
     font-weight: 800;
   }
   .loading__titre span {
@@ -470,7 +470,7 @@ footer h3 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    font-size: 80px;
+    font-size: 60px;
     margin-top: 50px;
     -webkit-animation: rotate-spinner 2000ms linear infinite;
             animation: rotate-spinner 2000ms linear infinite;
@@ -478,7 +478,7 @@ footer h3 {
 }
 
 /* version desktop et tablette */
-@media screen and (min-width: 997px) {
+@media screen and (min-width: 900px) {
   .entete {
     width: 100%;
     display: -webkit-box;
@@ -538,7 +538,7 @@ footer h3 {
   }
   .explication__titre h1 {
     text-align: center;
-    font-size: 35px;
+    font-size: 25px;
     margin: 50px 10% 5px 10%;
     font-weight: 500;
   }
@@ -585,7 +585,7 @@ footer h3 {
     margin-bottom: 60px;
   }
   .fonction__titre h2 {
-    font-size: 35px;
+    font-size: 25px;
     font-weight: 500;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -656,7 +656,7 @@ footer h3 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    font-size: 35px;
+    font-size: 25px;
     font-weight: 500;
     margin-bottom: 60px;
     margin-top: 60px;

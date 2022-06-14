@@ -13,18 +13,26 @@ h1 {
 
 @-webkit-keyframes animation-choix {
   0% {
+    -webkit-transform: translateY(40px);
+            transform: translateY(40px);
     opacity: 0;
   }
   100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
     opacity: 1;
   }
 }
 
 @keyframes animation-choix {
   0% {
+    -webkit-transform: translateY(40px);
+            transform: translateY(40px);
     opacity: 0;
   }
   100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
     opacity: 1;
   }
 }
@@ -106,14 +114,14 @@ h1 {
     text-decoration: none;
   }
   .entete i {
-    font-size: 35px;
+    font-size: 24px;
     color: black;
     position: absolute;
     left: 30px;
-    top: 30px;
+    top: 23px;
   }
   .entete img {
-    height: 50px;
+    height: 30px;
     width: auto;
   }
   .fond {
@@ -123,7 +131,7 @@ h1 {
   }
   .fond img {
     width: 100%;
-    height: 400px;
+    height: 230px;
     -o-object-fit: cover;
        object-fit: cover;
   }
@@ -134,9 +142,9 @@ h1 {
     background-color: white;
     width: auto;
     overflow: hidden;
-    height: 110px;
+    height: 70px;
     margin: 0% 3% 3% 3%;
-    border-radius: 25px;
+    border-radius: 15px;
     position: relative;
     -webkit-box-shadow: 0px 0px 7px #ddd9d9;
             box-shadow: 0px 0px 7px #ddd9d9;
@@ -144,8 +152,8 @@ h1 {
   .card .check {
     position: absolute;
     right: 0px;
-    width: 90px;
-    height: 110px;
+    width: 70px;
+    height: 70px;
     background-color: #99E2D0;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -208,17 +216,17 @@ h1 {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    font-size: 42px;
+    font-size: 25px;
     font-weight: 300;
     padding-left: 30px;
   }
   .repas__titre .coeur-plein {
-    font-size: 42px;
-    padding-right: 60px;
+    font-size: 25px;
+    padding-right: 40px;
   }
   .repas__titre .coeur-vide {
-    font-size: 42px;
-    margin-right: 60px;
+    font-size: 25px;
+    margin-right: 40px;
     opacity: 0;
     position: absolute;
     right: 0px;
@@ -231,7 +239,7 @@ h1 {
     margin-left: 3%;
   }
   .repas__plats--titre h2 {
-    font-size: 25px;
+    font-size: 18px;
     font-weight: 300;
   }
   .repas__plats--assiette {
@@ -257,10 +265,10 @@ h1 {
     white-space: nowrap;
     overflow: hidden;
     width: 100%;
-    height: 110px;
+    height: 75px;
   }
   .repas__plats--assiette .ligne1 h2 {
-    font-size: 27px;
+    font-size: 17px;
     font-weight: 400;
     margin: 16px 0px 0px 15px;
     white-space: nowrap;
@@ -268,7 +276,7 @@ h1 {
     text-overflow: ellipsis;
   }
   .repas__plats--assiette .ligne1 p {
-    font-size: 23px;
+    font-size: 13px;
     font-weight: 100;
     margin: 0px 0px 16px 15px;
     white-space: nowrap;
@@ -288,7 +296,7 @@ h1 {
     transition: 300ms ease-in;
   }
   .repas__plats--assiette .ligne2 h2 {
-    font-size: 23px;
+    font-size: 15px;
     font-weight: 500;
     margin-bottom: 35%;
   }
@@ -358,7 +366,7 @@ h1 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    height: 80px;
+    height: 50px;
     width: 50%;
     -webkit-box-shadow: 5px 5px 2px grey;
             box-shadow: 5px 5px 2px grey;
@@ -376,7 +384,7 @@ h1 {
   }
   .repas span {
     color: white;
-    font-size: 25px;
+    font-size: 18px;
   }
   .pied-de-page {
     display: -webkit-box;
@@ -391,7 +399,7 @@ h1 {
   }
   .pied-de-page__titre {
     color: white;
-    font-size: 22px;
+    font-size: 15px;
     font-weight: 100;
     margin-left: 5%;
   }
@@ -409,15 +417,15 @@ h1 {
     padding: 0px;
   }
   .pied-de-page__menu h2 {
-    font-size: 25px;
+    font-size: 15px;
     font-weight: 300;
     padding: 0px;
     margin-bottom: 0px;
   }
   .pied-de-page__menu i {
-    font-size: 23px;
+    font-size: 13px;
     width: 25px;
-    margin-right: 20px;
+    margin-right: 5px;
     padding: 0px;
   }
   .pied-de-page__menu a {
